@@ -1,0 +1,90 @@
+    body {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start; */
+    margin:0px;
+    background: #F1F3F5;
+}
+.container{
+    margin: 0px 5%
+}
+.header{
+    display: flex;
+}
+header{
+    background-color: rgb(250, 250, 250);
+    border-bottom: 1px solid lightgray;
+    padding: 1px;
+}
+.logo {
+    font-family: 'Baloo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.listitems { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    width: 267px;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-left: 30%;
+}
+
+.title-1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4vw;
+}
+.recipe-block{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-slider {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+.details{
+   flex: 1;
+}
+
+.text-1 {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.img-slider > img{
+    margin-top: 30px;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/* //Media Query For Mobile */
+@media only screen and (max-width: 500px) {
+    .recipe-block {
+     display: block;
+    }
+    .title-1 {
+        font-size: 28px
+    }
+    .text-1 {
+        font-size: 18px;
+    }
+    .img-slider > img{
+        margin-top:5px;
+        width: 100%;
+    }
+  }
